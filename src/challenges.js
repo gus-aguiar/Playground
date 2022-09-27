@@ -87,9 +87,10 @@ function decode() {
 // Desafio 10
 let array = []
 function techList(nomeTech,nomeDaPessoa) {
-  if(nomeTech === null){
+  if(nomeTech.length === 0){
     return 'Vazio!'
   }
+  nomeTech.sort()
   for(let index = 0; index < nomeTech.length; index +=1 ){
     array.push ({
       tech: nomeTech[0] ,
@@ -111,7 +112,7 @@ function techList(nomeTech,nomeDaPessoa) {
       tech: nomeTech[4],
       name: nomeDaPessoa 
     })
-   return array
+   return array.sort()
   }
  
 }
