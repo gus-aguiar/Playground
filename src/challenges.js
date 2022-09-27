@@ -65,7 +65,7 @@ function fizzBuzz(numeros) {
   let resultadoFB = []
   for(let index in numeros){
     if(numeros[index] % 3 === 0 && numeros[index] % 5 ===0){
-      resultadoFB.push('fizzbuzz') 
+      resultadoFB.push('fizzBuzz') 
     } else if(numeros[index] % 3 === 0 && numeros[index] % 5 != 0){
       resultadoFB.push('fizz')
     }else if (numeros[index] % 3 != 0 && numeros[index] % 5 === 0){
@@ -76,7 +76,7 @@ function fizzBuzz(numeros) {
   }
   return resultadoFB
 }
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 // Desafio 9
 function encode() {
   // seu código aqui
