@@ -22,13 +22,29 @@ function concatName(string) {
   
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  return (wins * 3) + (ties * 1)
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+  let contaRepetido = 0;
+  let contaNumero = 0;
+  let indexNumeroRepetido = 0;
+  for (let index in numeros){
+    let verifica = numeros[index];
+    for (let indexDois in numeros){
+      if(verifica === numeros[indexDois]){
+        contaNumero +=1;
+      }
+    }
+    if (contaNumero > contaRepetido){
+      contaRepetido = contaNumero;
+      indexNumeroRepetido = index
+    }
+    contaNumero = 0
+  }
+  return numeros[indexNumeroRepetido]
 }
 
 // Desafio 7
