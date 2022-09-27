@@ -60,8 +60,9 @@ function catAndMouse(mouse,cat1,cat2) {
 console.log(catAndMouse(5,8,2))
 
 // Desafio 8
-let resultadoFB = []
+
 function fizzBuzz(numeros) {
+  let resultadoFB = []
   for(let index in numeros){
     if(numeros[index] % 3 === 0 && numeros[index] % 5 ===0){
       resultadoFB.push('fizzbuzz') 
