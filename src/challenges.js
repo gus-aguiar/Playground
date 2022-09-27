@@ -27,17 +27,18 @@ function footballPoints(wins,ties) {
 }
 
 // Desafio 6
-let maiorNumero = numeros[0]
+
 let count = 0
 function highestCount(numeros) {
+  let maiorNumero = numeros[0]
   for (let index in numeros){
     if(numeros[index] > maiorNumero){
       maiorNumero = numeros[index]
-      for(let indexDois in numeros){
-        if(numeros[indexDois] === maiorNumero){
-          count +=1
-        }
-      }
+    }
+  }
+  for(let indexDois in numeros){
+    if(numeros[indexDois] === maiorNumero){
+      count +=1
     }
   }
   return count
