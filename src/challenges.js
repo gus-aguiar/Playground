@@ -27,34 +27,53 @@ function footballPoints(wins,ties) {
 }
 
 // Desafio 6
-function highestCount(numeros) {
-  let contaRepetido = 0;
-  let contaNumero = 0;
-  let indexNumeroRepetido = 0;
-  for (let index in numeros){
-    let verifica = numeros[index];
-    for (let indexDois in numeros){
-      if(verifica === numeros[indexDois]){
-        contaNumero +=1;
-      }
-    }
-    if (contaNumero > contaRepetido){
-      contaRepetido = contaNumero;
-      indexNumeroRepetido = index
-    }
-    contaNumero = 0
-  }
-  return numeros[indexNumeroRepetido]
-}
+// function highestCount(numeros) {
+//   let contaRepetido = 0;
+//   let contaNumero = 0;
+//   let indexNumeroRepetido = 0;
+//   for (let index in numeros){
+//     let verifica = numeros[index];
+//     for (let indexDois in numeros){
+//       if(verifica === numeros[indexDois]){
+//         contaNumero +=1;
+//       }
+//     }
+//     if (contaNumero > contaRepetido){
+//       contaRepetido = contaNumero;
+//       indexNumeroRepetido = index
+//     }
+//     contaNumero = 0
+//   }
+//   return numeros[indexNumeroRepetido]
+// }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+// function catAndMouse(mouse,cat1,cat2) {
+//   if(cat1 - mouse > cat2 - mouse){
+//     return 'cat2'} 
+//     else if(cat1 - mouse < cat2 - mouse){
+//       return 'cat1'
+//     } else if (cat1 - mouse === cat2 - mouse){
+//       return 'os gatos trombam e o rato foge'
+//     }
+// }
+// console.log(catAndMouse(6,9,3))
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+let resultadoFB = []
+function fizzBuzz(numeros) {
+  for(let index in numeros){
+    if(numeros[index] % 3 === 0 && numeros[index] % 5 ===0){
+      resultadoFB.push('fizzbuzz') 
+    } else if(numeros[index] % 3 === 0 && numeros[index] % 5 != 0){
+      resultadoFB.push('fizz')
+    }else if (numeros[index] % 3 != 0 && numeros[index] % 5 === 0){
+      resultadoFB.push('buzz')
+    }else if (numeros[index] % 3 != 0 && numeros[index] % 5 != 0){
+      resultadoFB.push('bug!')
+    }
+  }
+  return resultadoFB
 }
 
 // Desafio 9
