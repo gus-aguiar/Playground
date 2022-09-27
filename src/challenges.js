@@ -1,8 +1,5 @@
 // Desafio 1
-// const girafa = true;
-// const elefante = true;
-// const macaco = false;
-// const aav = false
+
 function compareTrue(param1,param2) {
   if(param1 === true && param2 === true){
     return true
@@ -17,12 +14,12 @@ function calcArea(base,altura) {
 function splitSentence(string) {
   return string.split(" ")
 }
-console.log(splitSentence('vamo que vamo'))
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(string) {
+    return string[string.length -1] + ', ' + string[0]
+     }
+  
 
 // Desafio 5
 function footballPoints() {
