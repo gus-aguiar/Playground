@@ -93,23 +93,23 @@ function techList(nomeTech,nomeDaPessoa) {
   for(let index = 0; index < nomeTech.length; index +=1 ){
     array.push ({
       tech: nomeTech[0] ,
-      name: '"' + nomeDaPessoa +'"'
+      name: nomeDaPessoa 
     })
     array.push ({
-      tech: '"' + nomeTech[1] +'"',
-      name: '"' + nomeDaPessoa +'"'
+      tech: nomeTech[1],
+      name: nomeDaPessoa 
     })
     array.push ({
-      tech: '"' + nomeTech[2] +'"',
-      name: '"' + nomeDaPessoa +'"'
+      tech: nomeTech[2],
+      name: nomeDaPessoa 
     })
     array.push ({
-      tech: '"' + nomeTech[3] +'"',
-      name: '"' + nomeDaPessoa +'"'
+      tech: nomeTech[3],
+      name: nomeDaPessoa 
     })
     array.push ({
-      tech: '"' + nomeTech[4] +'"',
-      name: '"' + nomeDaPessoa +'"'
+      tech: nomeTech[4],
+      name: nomeDaPessoa 
     })
    return array
   }
