@@ -28,8 +28,9 @@ function footballPoints(wins,ties) {
 
 // Desafio 6
 
-let count = 0
+
 function highestCount(numeros) {
+  let count = 0
   let maiorNumero = numeros[0]
   for (let index in numeros){
     if(numeros[index] > maiorNumero){
@@ -38,11 +39,12 @@ function highestCount(numeros) {
   }
   for(let indexDois in numeros){
     if(numeros[indexDois] === maiorNumero){
-      count +=1
+      count += 1
     }
   }
   return count
 }
+console.log(highestCount([0, 0, 0]))
 
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
@@ -109,7 +111,7 @@ function techList(nomeTech,nomeDaPessoa) {
       tech: nomeTech[4],
       name: nomeDaPessoa 
     })
-   return array.sort()
+   return array
   }
  
 }
