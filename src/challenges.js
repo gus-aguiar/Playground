@@ -27,24 +27,20 @@ function footballPoints(wins,ties) {
 }
 
 // Desafio 6
+let maiorNumero = numeros[0]
+let count = 0
 function highestCount(numeros) {
-  let contaRepetido = 0;
-  let contaNumero = 0;
-  let indexNumeroRepetido = 0;
   for (let index in numeros){
-    let verifica = numeros[index];
-    for (let indexDois in numeros){
-      if(verifica === numeros[indexDois]){
-        contaNumero +=1;
+    if(numeros[index] > maiorNumero){
+      maiorNumero = numeros[index]
+      for(let indexDois in numeros){
+        if(numeros[indexDois] === maiorNumero){
+          count +=1
+        }
       }
     }
-    if (contaNumero > contaRepetido){
-      contaRepetido = contaNumero;
-      indexNumeroRepetido = index
-    }
-    contaNumero = 0
   }
-  return numeros[indexNumeroRepetido]
+  return count
 }
 
 // Desafio 7
