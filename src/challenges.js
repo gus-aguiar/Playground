@@ -76,19 +76,46 @@ function fizzBuzz(numeros) {
   }
   return resultadoFB
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringEncode) {
+  
 }
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+let array = []
+function techList(nomeTech,nomeDaPessoa) {
+  if(nomeTech === null){
+    return 'Vazio!'
+  }
+  for(let index = 0; index < nomeTech.length; index +=1 ){
+    array.push ({
+      tech: nomeTech[0] ,
+      name: '"' + nomeDaPessoa +'"'
+    })
+    array.push ({
+      tech: '"' + nomeTech[1] +'"',
+      name: '"' + nomeDaPessoa +'"'
+    })
+    array.push ({
+      tech: '"' + nomeTech[2] +'"',
+      name: '"' + nomeDaPessoa +'"'
+    })
+    array.push ({
+      tech: '"' + nomeTech[3] +'"',
+      name: '"' + nomeDaPessoa +'"'
+    })
+    array.push ({
+      tech: '"' + nomeTech[4] +'"',
+      name: '"' + nomeDaPessoa +'"'
+    })
+   return array
+  }
+ 
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Lucas'))
 
 module.exports = {
   calcArea,
