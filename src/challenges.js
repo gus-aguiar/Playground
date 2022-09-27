@@ -8,10 +8,9 @@ function compareTrue(param1,param2) {
     return true
   } else {return false}
 }
-console.log(compareTrue (girafa,aav))
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,altura) {
+  return (base * altura)/2
 }
 
 // Desafio 3
