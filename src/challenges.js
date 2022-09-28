@@ -77,10 +77,15 @@ function fizzBuzz(numeros) {
 }
 // Desafio 9
 function encode(stringEncode) {
-  console.log(stringEncode.split(""))
-
+  let palavra = stringEncode.split('')
+  for (let key in palavra){
+    if (palavra[key] === 'a'){
+      console.log(palavra)
+    }
   }
-  
+return palavra
+  }
+  encode('alalala')
 
 
 function decode() {
