@@ -77,16 +77,11 @@ function fizzBuzz(numeros) {
 }
 // Desafio 9
 function encode(stringEncode) {
-  let arrayDeLetras = stringEncode
-  arrayDeLetras.split("")
-  for(let key in arrayDeLetras){
-    if(arrayDeLetras[key] === 'a'){
-      arrayDeLetras[key] = 1
-    }
+  console.log(stringEncode.split(""))
+
   }
-  return arrayDeLetras
-}
-console.log(encode('aeiou'))
+  
+
 
 function decode() {
   // seu código aqui
