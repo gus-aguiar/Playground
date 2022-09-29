@@ -17,9 +17,10 @@ function generatePhoneNumber(number) {
           count += 1
         }
       }
-  }
-  if(count === 3){
-    return 'não é possível gerar um número de telefone com esses valores'
+      if(count >= 3){
+        return 'não é possível gerar um número de telefone com esses valores'
+      }
+      count = 0
   }
     tel.push('(');
     tel.push(number[0])
