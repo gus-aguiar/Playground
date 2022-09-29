@@ -1,11 +1,13 @@
 // Desafio 11
 function generatePhoneNumber(number) {
   let tel = []
-  if(number.length > 10){
+  if(number.length > 11){
     return 'Array com tamanho incorreto.'
   }
   for(let key in number){
-    if(number[key] > 9)
+    if(number[key] > 9  || number[key] < 0 || number[key] === number[key+1] === number[key+2]){
+      return 'não é possível gerar um número de telefone com esses valores'
+    }
   }
     tel.push('(');
     tel.push(number[0])
@@ -36,7 +38,7 @@ function triangleCheck(lineA, lineB, lineC) {
   } if (lineC < lineA + lineB && lineC > Math.abs(lineA - lineB)) {
     return true;
   }
-  return false;
+  else return false;
 }
 
 // Desafio 13
