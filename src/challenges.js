@@ -76,32 +76,39 @@ function fizzBuzz(numeros) {
 }
 // Desafio 9
 function encode(stringEncode) {
-  let resultado = []
-  for(let key in stringEncode){
-    if (stringEncode[key] === 'a'){
-      resultado.push('1')
-    }
-    else if (stringEncode[key] === 'e'){
-      resultado.push('2')
-    }
-    else if (stringEncode[key] === 'i'){
-      resultado.push('3')
-    }
-    else if (stringEncode[key] === 'o'){
-      resultado.push('4')
-    }
-    else if (stringEncode[key] === 'u'){
-      resultado.push('5')
-    } 
-    else{resultado.push(stringEncode[key])}
+  let resultado = [];
+  for (let key in stringEncode) {
+    if (stringEncode[key] === 'a') {
+      resultado.push('1');
+    } else if (stringEncode[key] === 'e') {
+      resultado.push('2');
+    } else if (stringEncode[key] === 'i') {
+      resultado.push('3');
+    } else if (stringEncode[key] === 'o') {
+      resultado.push('4');
+    } else if (stringEncode[key] === 'u') {
+      resultado.push('5');
+    } else { resultado.push(stringEncode[key]); }
   }
-  return resultado.join('')
+  return resultado.join('');
 }
-console.log(encode('aeiou'))
 
-
-function decode() {
-  // seu código aqui
+function decode(stringEncode) {
+  let resultado = [];
+  for (let key in stringEncode) {
+    if (stringEncode[key] === '1') {
+      resultado.push('a');
+    } else if (stringEncode[key] === '2') {
+      resultado.push('e');
+    } else if (stringEncode[key] === '3') {
+      resultado.push('i');
+    } else if (stringEncode[key] === '4') {
+      resultado.push('o');
+    } else if (stringEncode[key] === '5') {
+      resultado.push('u');
+    } else { resultado.push(stringEncode[key]); }
+  }
+  return resultado.join('');
 }
 
 // Desafio 10
