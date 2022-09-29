@@ -76,15 +76,29 @@ function fizzBuzz(numeros) {
 }
 // Desafio 9
 function encode(stringEncode) {
-  let palavra = stringEncode.split('');
-  for (let key in palavra) {
-    if (palavra[key] === 'a') {
-      console.log(palavra);
+  let resultado = []
+  for(let key in stringEncode){
+    if (stringEncode[key] === 'a'){
+      resultado.push('1')
     }
+    else if (stringEncode[key] === 'e'){
+      resultado.push('2')
+    }
+    else if (stringEncode[key] === 'i'){
+      resultado.push('3')
+    }
+    else if (stringEncode[key] === 'o'){
+      resultado.push('4')
+    }
+    else if (stringEncode[key] === 'u'){
+      resultado.push('5')
+    } 
+    else{resultado.push(stringEncode[key])}
   }
-  return palavra;
+  return resultado.join('')
 }
-encode('alalala');
+console.log(encode('aeiou'))
+
 
 function decode() {
   // seu código aqui
