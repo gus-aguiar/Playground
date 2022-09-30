@@ -58,15 +58,16 @@ function triangleCheck(lineA, lineB, lineC) {
 function hydrate(texto) {
   let numbers = []
   for(index in texto){
-  
-  if (parseInt(texto[index]) !== NaN){
-    numbers.push(texto[index])
+  if (parseInt(texto[index]) > 0 && (parseInt(texto[index])) < 9){
+  numbers.push (parseInt(texto[index]))
+  console.log(numbers)
   }
   }
-  // console.log(numbers)
 }
-// console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
-co
+
+
+console.log (hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
+
 module.exports = {
   generatePhoneNumber,
   hydrate,
