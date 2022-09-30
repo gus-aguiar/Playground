@@ -55,10 +55,18 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(texto) {
+  let numbers = []
+  for(index in texto){
+  
+  if (parseInt(texto[index]) !== NaN){
+    numbers.push(texto[index])
+  }
+  }
+  // console.log(numbers)
 }
-
+// console.log(hydrate('1 cachaça, 5 cervejas e 1 copo de vinho'))
+co
 module.exports = {
   generatePhoneNumber,
   hydrate,
